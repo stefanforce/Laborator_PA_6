@@ -31,7 +31,7 @@ public class DrawingPanel extends JPanel {
         });
     }
     private void drawShape(int x, int y) {
-        int radius = (int) ((Integer)frame.configPanel.sizeField.getValue()*Math.random()*10);
+        double radius =Math.random()*100;
         int sides = (Integer)frame.configPanel.sidesField.getValue();
         Random rand = new Random();
         float r = rand.nextFloat();
